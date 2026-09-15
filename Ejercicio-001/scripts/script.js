@@ -3,7 +3,7 @@ alert(`Introduzca su nombre:`);
 /*El prompt sirve para que aparezca el POPUP*/ 
 let nombre = prompt("Introduzca su nombre:");        
 
-alert("Introduzca su edad:");
+alert(`Introduzca su edad:`);
 /*Se pone parseINT para que lo que ponga el usuario por escrito se convierta a número*/ 
 let edad= parseInt(prompt("Introduzca su edad:"));
 
