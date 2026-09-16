@@ -16,3 +16,25 @@
  *             La edad no puede ser superior a 120
  *
  ***************************************************************************************************************/
+let edad = prompt(`Introduce tu edad: `);
+if (isNaN(edad)) {
+    alert(`Introduzca un numero válido`);
+}else if(edad>120 && edad>0){
+alert(`Edad no válida`);
+
+}else if(edad<30){
+    alert(`! Ponte a trabajar !`);
+
+}else if(edad<65){
+    alert(`! Que ganas tengo de jubilarme !`)
+}else{
+    alert(`! Descansa un poco !`)    
+};
+
+switch(true){
+    case (isNaN == edad):
+        alert(`Numero no válido`); 
+    case (eedad>120 && edad>0){
+alert(`Edad no válida`);    
+}
+

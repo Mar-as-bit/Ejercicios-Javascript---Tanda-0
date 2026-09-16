@@ -23,26 +23,15 @@
  *             ¿Qué pasa si introducimos una cadena en vez de un número?
  *
  ***************************************************************************************************************/
+let number1= prompt(`Introduzca el primer número:`);
+let number2= prompt(`Introduzca el segundo número:`);
 
-/*Primero empieza aqui*/
+if (isNaN(number1) || isNaN(number2)) {
+    alert(`Por favor, introduzca un número válido.`);
 
-    /*Depende del numero dado*/ 
-    /*Se mira si */
-    do {
-       let numero = (`Dime un entero`)
-        /*Si da resultado NAN (No válido)*/
-        /*Mientras numero no es NAN devuelve el numero del FILTRADO */
-    }while (isNaN(numero))
-
-
-
-/*Salta a esta parte, vuelve arriba^^*/
-let numero1=pedirEntero(`Introduzca el primer número:`);
-/*Sigue con el siguiente número*/
-let numero2=pedirEntero(`Introduzca el segundo número:`);
-
-/*Una vez echo el filtrado ahora si se opera con los números */
-console.log (`La suma de ${numero1} y ${numero2} es: ${numero1 + numero2}`);
-console.log (`La resta de ${numero1} y ${numero2} es: ${numero1 - numero2}`);
-console.log (`El producto de ${numero1} y ${numero2} es: ${numero1 * numero2}`);
-console.log (`La división de ${numero1} entre ${numero2} es: ${(numero1 / numero2)}`);
+} else {
+    console.log (`La suma de ${number1} y ${number2} es: ${number1 + number2}`);
+    console.log (`La resta de ${number1} y ${number2} es: ${number1 - number2}`);
+    console.log (`El producto de ${number1} y ${number2} es: ${number1 * number2}`);
+    console.log (`La división de ${number1} entre ${number2} es: ${(number1 / number2).toFixed(2)}`);
+}

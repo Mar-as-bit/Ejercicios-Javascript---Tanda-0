@@ -20,5 +20,11 @@
  ***************************************************************************************************************/
 
 
-let temp = prompt(`Introduce la temperatura:`);
-let tempCelsius = 5/9 * (temp-32);
+let temp = parseFloat(prompt(`Introduce la temperatura:`));
+if (isNaN(temp)) {
+    alert(`Por favor, introduzca un número válido.`);
+
+} else {
+   let tempCelsius = 5/9 * (temp-32);
+console.log(`La temperatura es de ${tempCelsius.toFixed(2)}`);
+}
