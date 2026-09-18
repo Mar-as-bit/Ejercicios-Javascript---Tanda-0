@@ -13,3 +13,10 @@
  *                   El número de caramelos que sobran es: YYYY
  *
  ***************************************************************************************************************/
+
+
+let nCaramelos= prompt (`Introduce el numero de Caramelos`);
+let nPeques= prompt (`Introduce el numero de Niños`);
+let CarameloxNiño =   
+
+let CaramelosSobran= (nCaramelos % nPeques);

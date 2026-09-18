@@ -16,25 +16,30 @@
  *             La edad no puede ser superior a 120
  *
  ***************************************************************************************************************/
-let edad = prompt(`Introduce tu edad: `);
-if (isNaN(edad)) {
-    alert(`Introduzca un numero válido`);
-}else if(edad>120 && edad>0){
-alert(`Edad no válida`);
 
-}else if(edad<30){
-    alert(`! Ponte a trabajar !`);
+// function pedirEntero(message,min=-Infinity,max=Infinity){
+//     let edad
+//     do{
+//         edad = parseInt(prompt(message))
+//         if (isNaN(edad)) {
+//             alert("Tiene que ser un numero entero")
+//         } else if (edad<=min||edad>max) {
+//             alert(`Tiene que ser mayor que ${min} y menor que ${max}`)
+//         }
+//     }while(isNaN(edad)||edad<=min||edad>max)
+// } let edad=pedirEntero(0,120)
 
-}else if(edad<65){
-    alert(`! Que ganas tengo de jubilarme !`)
-}else{
-    alert(`! Descansa un poco !`)    
-};
-
+let nota = prompt (`Introduce tu edad`);
+let message="" 
 switch(true){
-    case (isNaN == edad):
-        alert(`Numero no válido`); 
-    case (eedad>120 && edad>0){
-alert(`Edad no válida`);    
-}
-
+    case(edad<30):
+        message=` ! Ponte a trabajar !`
+        break;
+    case (edad<=65):
+        message=`! Que ganas tengo de jubilarme !`
+        break;
+    case (edad>65):
+        message=`! Descansa un poco !`
+        break;
+};
+alert(message);
